@@ -5,10 +5,10 @@ import os
 f = open(os.path.basename(__file__)[:-3] + ".txt", "w")
 
 for i in range(1,30):
-	a = random.randint(1,99)
-	a = a/10
-	b = random.randint(1, 99)
+	a = random.randint(11,99)
+	b = random.randint(10, a)
 	b = b/10
-	f.write(str(i) + ") " + str(a) + " + " + str(b) + " = " + "\n")
+
+	f.write(str(i) + ") " + str(a) + " - " + str(b) + " = " + "\n")
 	
 f.close()
